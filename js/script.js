@@ -60,7 +60,8 @@ const searchUsers = () => {
   searchedUsers = users.filter((user) => {
     if (
       user.name.indexOf(inputSearch.value.toLowerCase()) > -1 ||
-      user.name.indexOf(inputSearch.value.toUpperCase()) > -1
+      user.name.indexOf(inputSearch.value.toUpperCase()) > -1 ||
+      user.name.indexOf(firstUpperCase()) > -1
     ) {
       return user;
     }
@@ -153,4 +154,9 @@ const statiscticsRender = (users) => {
 
 const formatNumber = (number) => {
   return numberFormat.format(number);
+};
+
+const firstUpperCase = () => {
+  const lower = inputSearch.value.toLowerCase();
+  return lower.charAt(0).toUpperCase() + lower.slice(1);
 };
