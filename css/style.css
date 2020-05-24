@@ -1,0 +1,38 @@
+#results,
+#search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#users,
+#statistics {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  width: 45%;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  border-radius: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
