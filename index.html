@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pesquisa de usuários</title>
   </head>
@@ -10,13 +14,13 @@
     <h1 style="text-align: center;">Pesquisa de usuários</h1>
     <div id="search">
       <input id="inputSearch" type="text" autofocus placeholder="Busca" />
-      <button id="buttonSearch" disabled>BUSCAR</button>
+      <button class="waves-effect waves-light btn" disabled>BUSCAR</button>
     </div>
     <div id="results">
-      <div id="users">
+      <div id="users" class="card grey lighten-4">
         Nenhum usuário filtrado
       </div>
-      <div id="statistics">
+      <div id="statistics" class="card grey lighten-4">
         Nada a ser exibido
       </div>
     </div>

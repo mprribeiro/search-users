@@ -8,7 +8,7 @@ let numberFormat = null;
 
 window.addEventListener('load', () => {
   inputSearch = document.querySelector('#inputSearch');
-  buttonSearch = document.querySelector('#buttonSearch');
+  buttonSearch = document.querySelector('.btn');
   usersPanel = document.querySelector('#users');
   statisticsPanel = document.querySelector('#statistics');
 
@@ -83,7 +83,7 @@ const usersRender = () => {
   });
 
   let usersHTML = '<div>';
-  usersHTML += `<h2> ${searchedUsers.length} usuário(s) encontrado(s) </h2>`;
+  usersHTML += `<h3> ${searchedUsers.length} usuário(s) encontrado(s) </h3>`;
 
   orderedUsers.forEach((user) => {
     const { name, age, picture } = user;
@@ -131,7 +131,7 @@ const statiscticsRender = (users) => {
   const statisticHTML = `
       <div class='statistics'>
         <div>
-          <h2>Estatísticas</h2>
+          <h3>Estatísticas</h3>
             <li>
             Sexo masculino: ${male}
             </li>
